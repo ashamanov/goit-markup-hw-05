@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!----------------------------------------------------HEADER-->
     <header class="page-header">
       <div class="container header-container">
         <a class="logo-link-blue link" href="" lang="en"
@@ -59,15 +60,16 @@
         </ul>
       </div>
     </header>
+    <!----------------------------------------------------MAIN-->
     <main>
-      <!-------------------------------------------------HERO-->
+      <!--------------------------------------------------HERO-->
       <section class="hero">
         <div class="container hero-container">
           <h1 class="headline">Эффективные решения для вашего бизнеса</h1>
-          <button class="modal-btn" type="button">Заказать услугу</button>
+          <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-      <!-------------------------------------------------ABOUT US-->
+      <!--------------------------------------------------ABOUT US-->
       <section class="aboutus">
         <div class="container">
           <ul class="aboutus-list list">
@@ -122,7 +124,7 @@
           </ul>
         </div>
       </section>
-      <!-------------------------------------------------WHAT WE DO-->
+      <!--------------------------------------------------WHAT WE DO-->
       <section class="whatwedo">
         <div class="container">
           <h2 class="h2titles">Чем мы занимаемся</h2>
@@ -135,6 +137,7 @@
                 width="370"
                 height="294"
               />
+              <p class="whatwedo-img-discription">Десктопные приложения</p>
             </li>
             <li class="whatwedo-item">
               <img
@@ -144,6 +147,7 @@
                 width="370"
                 height="294"
               />
+              <p class="whatwedo-img-discription">Мобильные приложения</p>
             </li>
             <li class="whatwedo-item">
               <img
@@ -153,11 +157,12 @@
                 width="370"
                 height="294"
               />
+              <p class="whatwedo-img-discription">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
-      <!-------------------------------------------------OUR TEAM-->
+      <!--------------------------------------------------OUR TEAM-->
       <section class="ourteam">
         <div class="container">
           <h2 class="h2titles">Наша команда</h2>
@@ -337,7 +342,7 @@
           </ul>
         </div>
       </section>
-      <!-------------------------------------------------OUR CLIENTS-->
+      <!--------------------------------------------------OUR CLIENTS-->
       <section class="ourclients">
         <div class="container">
           <h2 class="h2titles">Постоянные клиенты</h2>
@@ -470,5 +475,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close-btn">
+          <svg class="modal-close-btn-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-close"
+           ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
